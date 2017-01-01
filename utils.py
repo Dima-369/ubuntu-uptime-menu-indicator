@@ -15,7 +15,7 @@ def get_default_icon():
     if os_distributor_id == "elementary":
         return os.path.dirname(__file__) + "/transparent.png"
     else:
-        return "account_logged_in"
+        return "account-logged-in"
 
 
 def get_warning_icon():
