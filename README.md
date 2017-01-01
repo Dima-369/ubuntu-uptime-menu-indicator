@@ -15,5 +15,5 @@ The warning icon is from the clock-alert icon with more padding from https://mat
 
 ## Screenshots
 
-![](https://github.com/Gira-X/elementary-os-uptime-indicator/raw/elementaryos/screenshots/1.png)
-![](https://github.com/Gira-X/elementary-os-uptime-indicator/raw/elementaryos/screenshots/2.png)
+![](https://github.com/Gira-X/elementary-os-uptime-indicator/raw/master/screenshots/1.png)
+![](https://github.com/Gira-X/elementary-os-uptime-indicator/raw/master/screenshots/2.png)
