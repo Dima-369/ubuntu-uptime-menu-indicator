@@ -24,7 +24,7 @@ def get_warning_icon():
         # https://materialdesignicons.com/
         return os.path.dirname(__file__) + "/alert.png"
     else:
-        return "ubuntuone-client-error"
+        return "ubuntuone-client-offline"
 
 
 # Apparently, an icon has to be set, so we can use a 1x1px transparent icon
