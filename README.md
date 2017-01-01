@@ -1,4 +1,4 @@
-# Python3 script to log and display today's uptime
+# Python3 script to display a PC's today uptime
 
 For Elementary OS and Ubuntu.
 
