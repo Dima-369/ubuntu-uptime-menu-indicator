@@ -1,11 +1,36 @@
 import os
+import subprocess
 import time
 
-# Apparently, an icon has to be set so we can use a 1x1px transparent icon
-# which is barely noticeable to hide the icon and only display the text
-default_icon = os.path.dirname(__file__) + "/transparent.png"
-# clock-alert icon with more padding from https://materialdesignicons.com/
-warning_icon = os.path.dirname(__file__) + "/alert.png"
+
+def get_os_distributor_id():
+    return subprocess.check_output("lsb_release -s --id", shell=True) \
+        .decode("utf-8").strip()
+
+
+os_distributor_id = get_os_distributor_id()
+
+
+def get_default_icon():
+    if os_distributor_id == "elementary":
+        return os.path.dirname(__file__) + "/transparent.png"
+    else:
+        return "account_logged_in"
+
+
+def get_warning_icon():
+    if os_distributor_id == "elementary":
+        # 'clock-alert' icon with more padding from
+        # https://materialdesignicons.com/
+        return os.path.dirname(__file__) + "/alert.png"
+    else:
+        return "ubuntuone-client-error"
+
+
+# Apparently, an icon has to be set, so we can use a 1x1px transparent icon
+# for Elementary OS which is barely noticeable and a check mark icon for Ubuntu
+default_icon = get_default_icon()
+warning_icon = get_warning_icon()
 
 time_file = os.path.dirname(__file__) + "/total_today_time"
 
