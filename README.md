@@ -4,7 +4,7 @@ For Elementary OS and Ubuntu.
 
 Displays today's uptime with Gtk's AppIndicator3 library and displays a warning icon once a certain amount of hours (by default 5) are exceeded.
 
-The warning icon is from the clock-alert icon with more padding from https://materialdesignicons.com/.
+The warning icon is the `clock-alert` icon with more padding from https://materialdesignicons.com/
 
 ## Notes
 
