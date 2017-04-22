@@ -9,7 +9,7 @@ The warning icon is the `clock-alert` icon with more padding from https://materi
 ## Notes
 
 * The script checks if Elementary OS or Ubuntu is running automatically to adjust the menu icon
- * It uses different icons because the 1px transparent icon (used for Elementary OS) enlargens the menu item on Ubuntu. Every icon has the same fixed size there and I was not able to completely remove the icon unfortunately, so a dummy image had to be used
+  * It uses different icons because the 1px transparent icon (used for Elementary OS) enlargens the menu item on Ubuntu. Every icon has the same fixed size there and I was not able to completely remove the icon unfortunately, so a dummy image had to be used
 * Because my desktop PC frequently crashed on poweroff, as reported by `last`, a variable is incremented every 60 seconds using `GLib.timeout_add_seconds(60, self.handler_timeout)` and written to the `total_today_time` file to track the uptime
 * If you want to adjust the limit to show the alert icon, change `today_hour_limit` in `main.py`
 
